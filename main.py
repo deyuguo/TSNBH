@@ -1,5 +1,6 @@
 import pandas as pd
 import functools
+import tkinter as tk
 Profile = pd.read_excel(r'input\profile.xlsx')
 Production_09 = pd.read_table(r'input\2009.txt', skipfooter=15, engine='python')
 Production_10 = pd.read_table(r'input\2010.txt', skipfooter=15, engine='python')
