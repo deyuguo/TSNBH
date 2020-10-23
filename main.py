@@ -24,7 +24,7 @@ IND_RNs_09.rename(columns={1: 'IND_RNs_Jan_09', 2: 'IND_RNs_Feb_09', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_09 = pd.crosstab(index=Production_09.PROFILE_ID,
                          columns=Production_09.MONTH_SORT,
-                         values=Production_09.IND_ROOM_NIGHTS,
+                         values=Production_09.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_09', margins=True)
 IND_Rev_09.rename(columns={1: 'IND_Rev_Jan_09', 2: 'IND_Rev_Feb_09', 3: 'IND_Rev_Mar_09',
                            4: 'IND_Rev_Apr_09', 5: 'IND_Rev_May_09', 6: 'IND_Rev_Jun_09',
@@ -42,7 +42,7 @@ BLK_RNs_09.rename(columns={1: 'BLK_RNs_Jan_09', 2: 'BLK_RNs_Feb_09', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_09 = pd.crosstab(index=Production_09.PROFILE_ID,
                          columns=Production_09.MONTH_SORT,
-                         values=Production_09.BLK_ROOM_NIGHTS,
+                         values=Production_09.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_09', margins=True)
 BLK_Rev_09.rename(columns={1: 'BLK_Rev_Jan_09', 2: 'BLK_Rev_Feb_09', 3: 'BLK_Rev_Mar_09',
                            4: 'BLK_Rev_Apr_09', 5: 'BLK_Rev_May_09', 6: 'BLK_Rev_Jun_09',
@@ -60,7 +60,7 @@ IND_RNs_10.rename(columns={1: 'IND_RNs_Jan_10', 2: 'IND_RNs_Feb_10', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_10 = pd.crosstab(index=Production_10.PROFILE_ID,
                          columns=Production_10.MONTH_SORT,
-                         values=Production_10.IND_ROOM_NIGHTS,
+                         values=Production_10.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_10', margins=True)
 IND_Rev_10.rename(columns={1: 'IND_Rev_Jan_10', 2: 'IND_Rev_Feb_10', 3: 'IND_Rev_Mar_10',
                            4: 'IND_Rev_Apr_10', 5: 'IND_Rev_May_10', 6: 'IND_Rev_Jun_10',
@@ -78,7 +78,7 @@ BLK_RNs_10.rename(columns={1: 'BLK_RNs_Jan_10', 2: 'BLK_RNs_Feb_10', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_10 = pd.crosstab(index=Production_10.PROFILE_ID,
                          columns=Production_10.MONTH_SORT,
-                         values=Production_10.BLK_ROOM_NIGHTS,
+                         values=Production_10.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_10', margins=True)
 BLK_Rev_10.rename(columns={1: 'BLK_Rev_Jan_10', 2: 'BLK_Rev_Feb_10', 3: 'BLK_Rev_Mar_10',
                            4: 'BLK_Rev_Apr_10', 5: 'BLK_Rev_May_10', 6: 'BLK_Rev_Jun_10',
@@ -96,7 +96,7 @@ IND_RNs_11.rename(columns={1: 'IND_RNs_Jan_11', 2: 'IND_RNs_Feb_11', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_11 = pd.crosstab(index=Production_11.PROFILE_ID,
                          columns=Production_11.MONTH_SORT,
-                         values=Production_11.IND_ROOM_NIGHTS,
+                         values=Production_11.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_11', margins=True)
 IND_Rev_11.rename(columns={1: 'IND_Rev_Jan_11', 2: 'IND_Rev_Feb_11', 3: 'IND_Rev_Mar_11',
                            4: 'IND_Rev_Apr_11', 5: 'IND_Rev_May_11', 6: 'IND_Rev_Jun_11',
@@ -114,7 +114,7 @@ BLK_RNs_11.rename(columns={1: 'BLK_RNs_Jan_11', 2: 'BLK_RNs_Feb_11', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_11 = pd.crosstab(index=Production_11.PROFILE_ID,
                          columns=Production_11.MONTH_SORT,
-                         values=Production_11.BLK_ROOM_NIGHTS,
+                         values=Production_11.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_11', margins=True)
 BLK_Rev_11.rename(columns={1: 'BLK_Rev_Jan_11', 2: 'BLK_Rev_Feb_11', 3: 'BLK_Rev_Mar_11',
                            4: 'BLK_Rev_Apr_11', 5: 'BLK_Rev_May_11', 6: 'BLK_Rev_Jun_11',
@@ -132,7 +132,7 @@ IND_RNs_12.rename(columns={1: 'IND_RNs_Jan_12', 2: 'IND_RNs_Feb_12', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_12 = pd.crosstab(index=Production_12.PROFILE_ID,
                          columns=Production_12.MONTH_SORT,
-                         values=Production_12.IND_ROOM_NIGHTS,
+                         values=Production_12.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_12', margins=True)
 IND_Rev_12.rename(columns={1: 'IND_Rev_Jan_12', 2: 'IND_Rev_Feb_12', 3: 'IND_Rev_Mar_12',
                            4: 'IND_Rev_Apr_12', 5: 'IND_Rev_May_12', 6: 'IND_Rev_Jun_12',
@@ -150,7 +150,7 @@ BLK_RNs_12.rename(columns={1: 'BLK_RNs_Jan_12', 2: 'BLK_RNs_Feb_12', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_12 = pd.crosstab(index=Production_12.PROFILE_ID,
                          columns=Production_12.MONTH_SORT,
-                         values=Production_12.BLK_ROOM_NIGHTS,
+                         values=Production_12.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_12', margins=True)
 BLK_Rev_12.rename(columns={1: 'BLK_Rev_Jan_12', 2: 'BLK_Rev_Feb_12', 3: 'BLK_Rev_Mar_12',
                            4: 'BLK_Rev_Apr_12', 5: 'BLK_Rev_May_12', 6: 'BLK_Rev_Jun_12',
@@ -168,7 +168,7 @@ IND_RNs_13.rename(columns={1: 'IND_RNs_Jan_13', 2: 'IND_RNs_Feb_13', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_13 = pd.crosstab(index=Production_13.PROFILE_ID,
                          columns=Production_13.MONTH_SORT,
-                         values=Production_13.IND_ROOM_NIGHTS,
+                         values=Production_13.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_13', margins=True)
 IND_Rev_13.rename(columns={1: 'IND_Rev_Jan_13', 2: 'IND_Rev_Feb_13', 3: 'IND_Rev_Mar_13',
                            4: 'IND_Rev_Apr_13', 5: 'IND_Rev_May_13', 6: 'IND_Rev_Jun_13',
@@ -186,7 +186,7 @@ BLK_RNs_13.rename(columns={1: 'BLK_RNs_Jan_13', 2: 'BLK_RNs_Feb_13', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_13 = pd.crosstab(index=Production_13.PROFILE_ID,
                          columns=Production_13.MONTH_SORT,
-                         values=Production_13.BLK_ROOM_NIGHTS,
+                         values=Production_13.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_13', margins=True)
 BLK_Rev_13.rename(columns={1: 'BLK_Rev_Jan_13', 2: 'BLK_Rev_Feb_13', 3: 'BLK_Rev_Mar_13',
                            4: 'BLK_Rev_Apr_13', 5: 'BLK_Rev_May_13', 6: 'BLK_Rev_Jun_13',
@@ -204,7 +204,7 @@ IND_RNs_14.rename(columns={1: 'IND_RNs_Jan_14', 2: 'IND_RNs_Feb_14', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_14 = pd.crosstab(index=Production_14.PROFILE_ID,
                          columns=Production_14.MONTH_SORT,
-                         values=Production_14.IND_ROOM_NIGHTS,
+                         values=Production_14.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_14', margins=True)
 IND_Rev_14.rename(columns={1: 'IND_Rev_Jan_14', 2: 'IND_Rev_Feb_14', 3: 'IND_Rev_Mar_14',
                            4: 'IND_Rev_Apr_14', 5: 'IND_Rev_May_14', 6: 'IND_Rev_Jun_14',
@@ -222,7 +222,7 @@ BLK_RNs_14.rename(columns={1: 'BLK_RNs_Jan_14', 2: 'BLK_RNs_Feb_14', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_14 = pd.crosstab(index=Production_14.PROFILE_ID,
                          columns=Production_14.MONTH_SORT,
-                         values=Production_14.BLK_ROOM_NIGHTS,
+                         values=Production_14.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_14', margins=True)
 BLK_Rev_14.rename(columns={1: 'BLK_Rev_Jan_14', 2: 'BLK_Rev_Feb_14', 3: 'BLK_Rev_Mar_14',
                            4: 'BLK_Rev_Apr_14', 5: 'BLK_Rev_May_14', 6: 'BLK_Rev_Jun_14',
@@ -240,7 +240,7 @@ IND_RNs_15.rename(columns={1: 'IND_RNs_Jan_15', 2: 'IND_RNs_Feb_15', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_15 = pd.crosstab(index=Production_15.PROFILE_ID,
                          columns=Production_15.MONTH_SORT,
-                         values=Production_15.IND_ROOM_NIGHTS,
+                         values=Production_15.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_15', margins=True)
 IND_Rev_15.rename(columns={1: 'IND_Rev_Jan_15', 2: 'IND_Rev_Feb_15', 3: 'IND_Rev_Mar_15',
                            4: 'IND_Rev_Apr_15', 5: 'IND_Rev_May_15', 6: 'IND_Rev_Jun_15',
@@ -258,7 +258,7 @@ BLK_RNs_15.rename(columns={1: 'BLK_RNs_Jan_15', 2: 'BLK_RNs_Feb_15', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_15 = pd.crosstab(index=Production_15.PROFILE_ID,
                          columns=Production_15.MONTH_SORT,
-                         values=Production_15.BLK_ROOM_NIGHTS,
+                         values=Production_15.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_15', margins=True)
 BLK_Rev_15.rename(columns={1: 'BLK_Rev_Jan_15', 2: 'BLK_Rev_Feb_15', 3: 'BLK_Rev_Mar_15',
                            4: 'BLK_Rev_Apr_15', 5: 'BLK_Rev_May_15', 6: 'BLK_Rev_Jun_15',
@@ -276,7 +276,7 @@ IND_RNs_16.rename(columns={1: 'IND_RNs_Jan_16', 2: 'IND_RNs_Feb_16', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_16 = pd.crosstab(index=Production_16.PROFILE_ID,
                          columns=Production_16.MONTH_SORT,
-                         values=Production_16.IND_ROOM_NIGHTS,
+                         values=Production_16.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_16', margins=True)
 IND_Rev_16.rename(columns={1: 'IND_Rev_Jan_16', 2: 'IND_Rev_Feb_16', 3: 'IND_Rev_Mar_16',
                            4: 'IND_Rev_Apr_16', 5: 'IND_Rev_May_16', 6: 'IND_Rev_Jun_16',
@@ -294,7 +294,7 @@ BLK_RNs_16.rename(columns={1: 'BLK_RNs_Jan_16', 2: 'BLK_RNs_Feb_16', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_16 = pd.crosstab(index=Production_16.PROFILE_ID,
                          columns=Production_16.MONTH_SORT,
-                         values=Production_16.BLK_ROOM_NIGHTS,
+                         values=Production_16.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_16', margins=True)
 BLK_Rev_16.rename(columns={1: 'BLK_Rev_Jan_16', 2: 'BLK_Rev_Feb_16', 3: 'BLK_Rev_Mar_16',
                            4: 'BLK_Rev_Apr_16', 5: 'BLK_Rev_May_16', 6: 'BLK_Rev_Jun_16',
@@ -312,7 +312,7 @@ IND_RNs_17.rename(columns={1: 'IND_RNs_Jan_17', 2: 'IND_RNs_Feb_17', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_17 = pd.crosstab(index=Production_17.PROFILE_ID,
                          columns=Production_17.MONTH_SORT,
-                         values=Production_17.IND_ROOM_NIGHTS,
+                         values=Production_17.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_17', margins=True)
 IND_Rev_17.rename(columns={1: 'IND_Rev_Jan_17', 2: 'IND_Rev_Feb_17', 3: 'IND_Rev_Mar_17',
                            4: 'IND_Rev_Apr_17', 5: 'IND_Rev_May_17', 6: 'IND_Rev_Jun_17',
@@ -330,7 +330,7 @@ BLK_RNs_17.rename(columns={1: 'BLK_RNs_Jan_17', 2: 'BLK_RNs_Feb_17', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_17 = pd.crosstab(index=Production_17.PROFILE_ID,
                          columns=Production_17.MONTH_SORT,
-                         values=Production_17.BLK_ROOM_NIGHTS,
+                         values=Production_17.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_17', margins=True)
 BLK_Rev_17.rename(columns={1: 'BLK_Rev_Jan_17', 2: 'BLK_Rev_Feb_17', 3: 'BLK_Rev_Mar_17',
                            4: 'BLK_Rev_Apr_17', 5: 'BLK_Rev_May_17', 6: 'BLK_Rev_Jun_17',
@@ -348,7 +348,7 @@ IND_RNs_18.rename(columns={1: 'IND_RNs_Jan_18', 2: 'IND_RNs_Feb_18', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_18 = pd.crosstab(index=Production_18.PROFILE_ID,
                          columns=Production_18.MONTH_SORT,
-                         values=Production_18.IND_ROOM_NIGHTS,
+                         values=Production_18.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_18', margins=True)
 IND_Rev_18.rename(columns={1: 'IND_Rev_Jan_18', 2: 'IND_Rev_Feb_18', 3: 'IND_Rev_Mar_18',
                            4: 'IND_Rev_Apr_18', 5: 'IND_Rev_May_18', 6: 'IND_Rev_Jun_18',
@@ -366,7 +366,7 @@ BLK_RNs_18.rename(columns={1: 'BLK_RNs_Jan_18', 2: 'BLK_RNs_Feb_18', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_18 = pd.crosstab(index=Production_18.PROFILE_ID,
                          columns=Production_18.MONTH_SORT,
-                         values=Production_18.BLK_ROOM_NIGHTS,
+                         values=Production_18.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_18', margins=True)
 BLK_Rev_18.rename(columns={1: 'BLK_Rev_Jan_18', 2: 'BLK_Rev_Feb_18', 3: 'BLK_Rev_Mar_18',
                            4: 'BLK_Rev_Apr_18', 5: 'BLK_Rev_May_18', 6: 'BLK_Rev_Jun_18',
@@ -384,7 +384,7 @@ IND_RNs_19.rename(columns={1: 'IND_RNs_Jan_19', 2: 'IND_RNs_Feb_19', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_19 = pd.crosstab(index=Production_19.PROFILE_ID,
                          columns=Production_19.MONTH_SORT,
-                         values=Production_19.IND_ROOM_NIGHTS,
+                         values=Production_19.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_19', margins=True)
 IND_Rev_19.rename(columns={1: 'IND_Rev_Jan_19', 2: 'IND_Rev_Feb_19', 3: 'IND_Rev_Mar_19',
                            4: 'IND_Rev_Apr_19', 5: 'IND_Rev_May_19', 6: 'IND_Rev_Jun_19',
@@ -402,7 +402,7 @@ BLK_RNs_19.rename(columns={1: 'BLK_RNs_Jan_19', 2: 'BLK_RNs_Feb_19', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_19 = pd.crosstab(index=Production_19.PROFILE_ID,
                          columns=Production_19.MONTH_SORT,
-                         values=Production_19.BLK_ROOM_NIGHTS,
+                         values=Production_19.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_19', margins=True)
 BLK_Rev_19.rename(columns={1: 'BLK_Rev_Jan_19', 2: 'BLK_Rev_Feb_19', 3: 'BLK_Rev_Mar_19',
                            4: 'BLK_Rev_Apr_19', 5: 'BLK_Rev_May_19', 6: 'BLK_Rev_Jun_19',
@@ -420,7 +420,7 @@ IND_RNs_20.rename(columns={1: 'IND_RNs_Jan_20', 2: 'IND_RNs_Feb_20', 3: 'IND_RNs
                            }, inplace=True)
 IND_Rev_20 = pd.crosstab(index=Production_20.PROFILE_ID,
                          columns=Production_20.MONTH_SORT,
-                         values=Production_20.IND_ROOM_NIGHTS,
+                         values=Production_20.IND_ROOM_REVENUE,
                          aggfunc=sum, margins_name='IND_Rev_FY_20', margins=True)
 IND_Rev_20.rename(columns={1: 'IND_Rev_Jan_20', 2: 'IND_Rev_Feb_20', 3: 'IND_Rev_Mar_20',
                            4: 'IND_Rev_Apr_20', 5: 'IND_Rev_May_20', 6: 'IND_Rev_Jun_20',
@@ -438,7 +438,7 @@ BLK_RNs_20.rename(columns={1: 'BLK_RNs_Jan_20', 2: 'BLK_RNs_Feb_20', 3: 'BLK_RNs
                            }, inplace=True)
 BLK_Rev_20 = pd.crosstab(index=Production_20.PROFILE_ID,
                          columns=Production_20.MONTH_SORT,
-                         values=Production_20.BLK_ROOM_NIGHTS,
+                         values=Production_20.BLK_ROOM_REVENUE,
                          aggfunc=sum, margins_name='BLK_Rev_FY_20', margins=True)
 BLK_Rev_20.rename(columns={1: 'BLK_Rev_Jan_20', 2: 'BLK_Rev_Feb_20', 3: 'BLK_Rev_Mar_20',
                            4: 'BLK_Rev_Apr_20', 5: 'BLK_Rev_May_20', 6: 'BLK_Rev_Jun_20',
@@ -463,4 +463,4 @@ account_profile_with_production = pd.merge(Profile, Merge_PRO,
                                            left_on='Accounts Account ID',
                                            right_on='PROFILE_ID', how='left')
 account_profile_with_production.to_excel(r'output\account_profile_with_production.xlsx', index=None)
-print('Done!!!')
+print('Done!!!!')
